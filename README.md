@@ -60,7 +60,7 @@ https://static.bc-edx.com/data/dl-1-2/m13/lms/img/subcategory_DataFrame.png![ima
   - Import the contacts.xlsx file into a DataFrame.
   - Extract the "contact_id", "name", and "email" columns by using regular expressions.
   - Create a new DataFrame with the extracted data.
-  - onvert the "contact_id" column to the integer type.
+  - Convert the "contact_id" column to the integer type.
   - Split each "name" column value into a first and a last name, and place each in a new column.
   - Clean and then export the DataFrame as contacts.csv and save it to your GitHub repository.
 4. Check that your final DataFrame resembles the one in the following image:
