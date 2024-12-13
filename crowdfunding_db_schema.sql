@@ -42,3 +42,16 @@ FOREIGN KEY("category_id") REFERENCES "category" ("category_id");
 ALTER TABLE "campaign" ADD CONSTRAINT "foreigncamp_subcat_id" 
 FOREIGN KEY("subcategory_id") REFERENCES "subcategory" ("subcategory_id");
 
+-- Import necessary data for each table, importing the campaign data last
+
+SELECT * 
+FROM campaign
+
+SELECT * 
+FROM category
+
+SELECT * 
+FROM contacts
+
+SELECT * 
+FROM subcategory
