@@ -39,4 +39,48 @@ https://static.bc-edx.com/data/dl-1-2/m13/lms/img/subcategory_DataFrame.png![ima
  - The "category_id" column, with unique identification numbers matching those in the "category_id" column of the category DataFrame
  - The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
  - The following image shows this campaign DataFrame:
+ - https://static.bc-edx.com/data/dl-1-2/m13/lms/img/campaign_DataFrame.png![image](https://github.com/user-attachments/assets/aaeb506f-fb21-447f-bfc1-d7342ff4b80b)
+2. Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
+
+## Create the Contacts DataFrame
+
+1. Choose one of the following two options for extracting and transforming the data from the contacts.xlsx Excel data:
+  - Option 1: Use Python dictionary methods.
+  - Option 2: Use regular expressions.
+2. If you chose Option 1, complete the following steps:
+  - Import the contacts.xlsx file into a DataFrame.
+  - Iterate through the DataFrame, converting each row to a dictionary.
+  - Iterate through each dictionary, doing the following:
+    - Extract the dictionary values from the keys by using a Python list comprehension.
+    - Add the values for each row to a new list.
+  - Create a new DataFrame that contains the extracted data.
+  - Split each "name" column value into a first and last name, and place each in a new column.
+  - Clean and export the DataFrame as contacts.csv and save it to your GitHub repository.
+3. If you chose Option 2, complete the following steps:
+  - Import the contacts.xlsx file into a DataFrame.
+  - Extract the "contact_id", "name", and "email" columns by using regular expressions.
+  - Create a new DataFrame with the extracted data.
+  - onvert the "contact_id" column to the integer type.
+  - Split each "name" column value into a first and a last name, and place each in a new column.
+  - Clean and then export the DataFrame as contacts.csv and save it to your GitHub repository.
+4. Check that your final DataFrame resembles the one in the following image:
+https://static.bc-edx.com/data/dl-1-2/m13/lms/img/contact_DataFrame_final.png![image](https://github.com/user-attachments/assets/5f1af02a-6382-4d74-9266-c63fa3519e7e)
+
+## Create the Crowdfunding Database
+
+1. Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBD Links to an external site..
+2. Use the information from the ERD to create a table schema for each CSV file.
+Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
+3. Save the database schema as a Postgres file named crowdfunding_db_schema.sql, and save it to your GitHub repository.
+4. Create a new Postgres database, named crowdfunding_db.
+5. Using the database schema, create the tables in the correct order to handle the foreign keys.
+6. Verify the table creation by running a SELECT statement for each table.
+7. Import each CSV file into its corresponding SQL table.
+8. Verify that each table has the correct data by running a SELECT statement for each.
+
+
+
+
+
+
 
